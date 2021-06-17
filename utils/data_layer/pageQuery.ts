@@ -3,21 +3,22 @@ import client from './apollo-client'
 
 const slugArrayToUri = (slugs: string[]): string => `/${slugs.join('/')}`
 
-export const getStaticPropsWrapper = (query: DocumentNode) => async (ctx: Context) => {
-  const uri = slugArrayToUri(ctx.params?.slug || [])
-  const { data } = await client.query({
-    query,
-    variables: {
-      uri,
-    },
-  })
+export const getStaticPropsWrapper =
+  (query: DocumentNode) => async (ctx: Context) => {
+    const uri = slugArrayToUri(ctx.params?.slug || [])
+    const { data } = await client.query({
+      query,
+      variables: {
+        uri,
+      },
+    })
 
-  return {
-    props: {
-      entry: data.entry,
-    },
+    return {
+      props: {
+        entry: data.entry,
+      },
+    }
   }
-}
 
 export const getStaticPathsWrapper = () => async () => {
   const { data } = await client.query({

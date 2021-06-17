@@ -1,14 +1,12 @@
 @import '../../styles/variables';
 
-
 .background {
   background: $containerBg;
   border-radius: 16px;
   margin: 40px auto;
 
   @media (min-width: $md) {
-  margin: 64px auto;
-
+    margin: 64px auto;
   }
 
   @media (min-width: $xl) {
@@ -25,7 +23,6 @@
   width: 90%;
   margin: 0 auto;
   padding: 24px 0 0 0;
-
 
   @media (min-width: $md) {
     padding: 40px 0 0 0;
@@ -74,7 +71,6 @@
     font-size: 24px;
     line-height: 30px;
   }
-
 }
 .description {
   color: $secondaryText;
@@ -89,11 +85,11 @@
   }
 }
 
-.primary{
+.primary {
   max-width: 150px;
   font-size: 13px;
   padding: 16px;
-  background: linear-gradient(135deg, #9E2432 0%, #CE2D3F 100%);
+  background: linear-gradient(135deg, #9e2432 0%, #ce2d3f 100%);
   border-radius: 4px;
   margin: 0 0 14px 0;
 
@@ -101,23 +97,22 @@
     margin: 0 15px 0 0;
   }
 }
-.secondary{
+.secondary {
   max-width: 150px;
   font-size: 13px;
   padding: 14.5px;
-  border: 1.5px solid #CE2D3F;
+  border: 1.5px solid #ce2d3f;
   border-radius: 4px;
-
 }
 
-.buttonContainer{
+.buttonContainer {
   display: flex;
   flex-direction: column;
   @media (min-width: $lg) {
     flex-direction: row;
   }
 }
-.content{
+.content {
   @media (min-width: $lg) {
     display: flex;
     flex-direction: column;

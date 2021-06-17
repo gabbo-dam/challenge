@@ -10,7 +10,6 @@ export default function Page({ entry }: { entry: Entry }) {
         <title>PXLP - WebStack</title>
         <meta name="description" content="pxlp" />
         <link rel="icon" href="/favicon.ico" />
-
       </Head>
       <div>
         <style jsx global>
@@ -22,7 +21,6 @@ export default function Page({ entry }: { entry: Entry }) {
       <main>
         <Repeater blocks={entry.replicator} />
       </main>
-
     </div>
   )
 }

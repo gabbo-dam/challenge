@@ -42,9 +42,9 @@ const SliderBlock = ({ block }: { block: SliderInterface }) => {
           },
         ]}
       > */}
-        {slideConstructor('/Mask.jpg', 'xd')}
-        {slideConstructor('/Mask.jpg', 'xd')}
-        {slideConstructor('/Mask.jpg', 'xd')}
+      {slideConstructor('/Mask.jpg', 'xd')}
+      {slideConstructor('/Mask.jpg', 'xd')}
+      {slideConstructor('/Mask.jpg', 'xd')}
       {/* </Carousel> */}
     </section>
   )

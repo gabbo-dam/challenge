@@ -1,4 +1,4 @@
 export default interface Entry {
-  id: string | number,
-  replicator: any[],
+  id: string | number
+  replicator: any[]
 }

@@ -23,8 +23,12 @@ const TextImageBlock = ({ block }: { block: TextImageInterface }) => (
         <p className={styles.subline}>{block.subline}</p>
         <p className={styles.description}>{block.description}</p>
         <div className={styles.buttonContainer}>
-          <button type="button" className={styles.primary}>{block.buttons[0].label}</button>
-          <button type="button" className={styles.secondary}>{block.buttons[1].label}</button>
+          <button type="button" className={styles.primary}>
+            {block.buttons[0].label}
+          </button>
+          <button type="button" className={styles.secondary}>
+            {block.buttons[1].label}
+          </button>
         </div>
       </div>
     </div>

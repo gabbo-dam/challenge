@@ -1,5 +1,8 @@
 import Page from '../layouts/page'
-import { getStaticPathsWrapper, getStaticPropsWrapper } from '../utils/data_layer/pageQuery'
+import {
+  getStaticPathsWrapper,
+  getStaticPropsWrapper,
+} from '../utils/data_layer/pageQuery'
 import PageQuery from '../queries/page'
 
 export default Page

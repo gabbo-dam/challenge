@@ -29,7 +29,9 @@ const NewsTeaserBlock = ({ block }: { block: NewsTeaserInterface }) => {
     <section className={styles.background}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h2 className={styles.title}>Other premium large format experiences</h2>
+          <h2 className={styles.title}>
+            Other premium large format experiences
+          </h2>
           <p className={styles.description}>{block.description}</p>
         </div>
         <main className={styles.main}>

@@ -12,16 +12,16 @@
 // }
 
 export default interface SliderInterface {
-    description: string
-    type: string
-    headline: string
-    slider: {
-      image: {
-        id: string
-        ratio: number
-        url: string
-        focus_css: string
-      }
-      overlay_text: string
+  description: string
+  type: string
+  headline: string
+  slider: {
+    image: {
+      id: string
+      ratio: number
+      url: string
+      focus_css: string
     }
+    overlay_text: string
+  }
 }

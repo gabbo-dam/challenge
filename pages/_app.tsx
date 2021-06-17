@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/globals.scss'
 
-import 'swiper/swiper.scss';
+import 'swiper/swiper.scss'
 
 /* eslint react/jsx-props-no-spreading: "off", curly: "error" */
 /* eslint react/prop-types: "off", curly: "error" */
