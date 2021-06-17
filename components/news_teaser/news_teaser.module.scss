@@ -1,9 +1,6 @@
 @import '../../styles/variables';
 
-.root {
-  // add your styles here
-  height: 100vh;
-}
+
 
 .background {
   background: $containerBg;
@@ -11,15 +8,13 @@
   margin: 40px auto;
 
   @media (min-width: $md) {
-  margin: 64px auto;
-
+    margin: 64px auto;
   }
 
   @media (min-width: $xl) {
     width: 85%;
     max-width: 1440px;
     margin: 96px auto;
-
   }
 }
 
@@ -27,16 +22,13 @@
   width: 85%;
   margin: 0 auto;
   padding: 24px 0 100px 0;
-  border-bottom: 1px solid rgba(216, 216, 216, 0.25);;
-
+  border-bottom: 1px solid rgba(216, 216, 216, 0.25);
 
   @media (min-width: $md) {
     padding: 40px 0 150px 0;
-
   }
   @media (min-width: $md) {
     padding: 48px 0 200px 0;
-
   }
   @media (min-width: $xl) {
     padding: 56px 0 250px 0;
@@ -51,14 +43,11 @@
   gap: 40px;
   margin: 0 0 50px 0;
   @media (min-width: $md) {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 65px;
+    grid-template-columns: repeat(2, 1fr);
   }
   @media (min-width: $lg) {
-    gap: 85px;
   }
   @media (min-width: $lg) {
-    gap: 59px;
     margin: 0 0 100px 0;
   }
 }
@@ -136,11 +125,11 @@
   color: $secondaryText;
 }
 
-.primary{
+.primary {
   width: 200px;
   font-size: 13px;
   padding: 16px;
-  background: linear-gradient(135deg, #9E2432 0%, #CE2D3F 100%);
+  background: linear-gradient(135deg, #9e2432 0%, #ce2d3f 100%);
   border-radius: 4px;
   margin: 40px auto 0 auto;
 }

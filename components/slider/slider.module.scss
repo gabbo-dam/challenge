@@ -1,6 +1,77 @@
 @import '../../styles/variables';
 
-.root {
-  // add your styles here
-  height: 100vh;
+
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.header {
+  padding: 40px 0 70px 0;
+  width: 90%;
+  margin: 0 auto;
+
+  @media (min-width: $md) {
+    display: grid;
+    width: 85%;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 40px 0 64px  0;
+  }
+  @media (min-width: $xl) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0 100px 0;
+  }
+}
+
+.headline {
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+  margin: 0 0 24px 0;
+  @media (min-width: $md) {
+    margin: 0;
+  }
+  @media (min-width: $lg) {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  @media (min-width: $xl) {
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -1px;
+  }
+}
+.description {
+  font-size: 16px;
+  line-height: 24px;
+  color: $secondaryText;
+  @media (min-width: $lg) {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+  }
+}
+
+.img {
+  position: relative;
+}
+.imgOverlay {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 10px;
+  line-height: 14px;
+  @media (min-width: $md) {
+    font-size: 16px;
+    line-height: 24px;
+    bottom: 20px;
+    left: 40px;
+  }
 }
