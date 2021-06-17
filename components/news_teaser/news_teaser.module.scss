@@ -1,0 +1,152 @@
+@import '../../styles/variables';
+
+.root {
+  // add your styles here
+  height: 100vh;
+}
+
+.background {
+  background: $containerBg;
+  border-radius: 16px;
+  margin: 40px auto;
+
+  @media (min-width: $md) {
+  margin: 64px auto;
+
+  }
+
+  @media (min-width: $xl) {
+    width: 85%;
+    max-width: 1440px;
+    margin: 96px auto;
+
+  }
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 24px 0 100px 0;
+  border-bottom: 1px solid rgba(216, 216, 216, 0.25);;
+
+
+  @media (min-width: $md) {
+    padding: 40px 0 150px 0;
+
+  }
+  @media (min-width: $md) {
+    padding: 48px 0 200px 0;
+
+  }
+  @media (min-width: $xl) {
+    padding: 56px 0 250px 0;
+    width: 80%;
+    max-width: 1440px;
+  }
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+  margin: 0 0 50px 0;
+  @media (min-width: $md) {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 65px;
+  }
+  @media (min-width: $lg) {
+    gap: 85px;
+  }
+  @media (min-width: $lg) {
+    gap: 59px;
+    margin: 0 0 100px 0;
+  }
+}
+
+.title {
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+  @media (min-width: $lg) {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -1px;
+  }
+  @media (min-width: $xl) {
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: -0.833333px;
+  }
+}
+
+.description {
+  font-size: 16px;
+  line-height: 24px;
+  color: $secondaryText;
+  @media (min-width: $xl) {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+  }
+}
+
+.main {
+  @media (min-width: $md) {
+    display: grid;
+    gap: 23px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (min-width: $lg) {
+    gap: 54px;
+  }
+  @media (min-width: $xl) {
+    gap: 67px;
+  }
+}
+
+.card {
+  margin: 0 0 50px 0;
+  @media (min-width: $md) {
+    margin: 0;
+  }
+}
+
+.img {
+  border-radius: 16px;
+}
+
+.cardTitle {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  margin: 16px 0;
+
+  @media (min-width: $md) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @media (min-width: $xl) {
+    margin: 27px 0 10px 0;
+  }
+}
+
+.cardText {
+  font-size: 13px;
+  line-height: 20px;
+  color: $secondaryText;
+}
+
+.primary{
+  width: 200px;
+  font-size: 13px;
+  padding: 16px;
+  background: linear-gradient(135deg, #9E2432 0%, #CE2D3F 100%);
+  border-radius: 4px;
+  margin: 40px auto 0 auto;
+}
+
+.center {
+  grid-column: 1 / 4;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,126 @@
+@import '../../styles/variables';
+
+
+.background {
+  background: $containerBg;
+  border-radius: 16px;
+  margin: 40px auto;
+
+  @media (min-width: $md) {
+  margin: 64px auto;
+
+  }
+
+  @media (min-width: $xl) {
+    height: 756px;
+    width: 85%;
+    max-width: 1440px;
+    margin: 96px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 24px 0 0 0;
+
+
+  @media (min-width: $md) {
+    padding: 40px 0 0 0;
+    display: grid;
+    gap: 65px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: $md) {
+    gap: 85px;
+  }
+  @media (min-width: $xl) {
+    width: 85%;
+    max-width: 1440px;
+    gap: 120px;
+  }
+}
+.img {
+  border-radius: 16px;
+}
+
+.title {
+  font-size: 32px;
+  letter-spacing: -0.5px;
+  margin: 16px 0;
+
+  @media (min-width: $md) {
+    margin: 0 0 16px 0;
+  }
+
+  @media (min-width: $xl) {
+    font-size: 48px;
+    letter-spacing: -1px;
+    margin: 0 0 24px 0;
+  }
+}
+.subline {
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0 0 16px 0;
+
+  @media (min-width: $md) {
+    margin: 0 0 44px 0;
+  }
+
+  @media (min-width: $xl) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+}
+.description {
+  color: $secondaryText;
+  margin: 0 0 26px 0;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (min-width: $xl) {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 0 66px 0;
+  }
+}
+
+.primary{
+  max-width: 150px;
+  font-size: 13px;
+  padding: 16px;
+  background: linear-gradient(135deg, #9E2432 0%, #CE2D3F 100%);
+  border-radius: 4px;
+  margin: 0 0 14px 0;
+
+  @media (min-width: $lg) {
+    margin: 0 15px 0 0;
+  }
+}
+.secondary{
+  max-width: 150px;
+  font-size: 13px;
+  padding: 14.5px;
+  border: 1.5px solid #CE2D3F;
+  border-radius: 4px;
+
+}
+
+.buttonContainer{
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $lg) {
+    flex-direction: row;
+  }
+}
+.content{
+  @media (min-width: $lg) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

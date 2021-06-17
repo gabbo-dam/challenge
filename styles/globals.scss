@@ -1,0 +1,15 @@
+@import '../node_modules/normalize.css/normalize.css';
+@import 'variables';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: $background;
+  color: $text;
+  font-family: $font;
+  letter-spacing: -0.5px;
+}
+
+
