@@ -5,34 +5,37 @@ import styles from './text_image.module.scss'
 
 export const typename = 'Set_Replicator_BlockTextImage'
 
-const TextImageBlock = ({ block }: { block: TextImageInterface }) => (
-  <section className={styles.background}>
-    <div className={styles.container}>
-      <div>
-        <Image
-          className={styles.img}
-          src="/text-img.jpg"
-          alt={block.image.id}
-          layout="responsive"
-          width={520}
-          height={520}
-        />
-      </div>
-      <div className={styles.content}>
-        <h1 className={styles.title}>{block.headline}</h1>
-        <p className={styles.subline}>{block.subline}</p>
-        <p className={styles.description}>{block.description}</p>
-        <div className={styles.buttonContainer}>
-          <button type="button" className={styles.primary}>
-            {block.buttons[0].label}
-          </button>
-          <button type="button" className={styles.secondary}>
-            {block.buttons[1].label}
-          </button>
+const TextImageBlock = ({ block }: { block: TextImageInterface }) => {
+  const { headline, subline, description, image, buttons } = block
+  return (
+    <section className={styles.background}>
+      <div className={styles.container}>
+        <div>
+          <Image
+            className={styles.img}
+            src="/text-img.jpg"
+            alt={image.id}
+            layout="responsive"
+            width={520}
+            height={520}
+          />
+        </div>
+        <div className={styles.content}>
+          <h1 className={styles.title}>{headline}</h1>
+          <p className={styles.subline}>{subline}</p>
+          <p className={styles.description}>{description}</p>
+          <div className={styles.buttonContainer}>
+            <button type="button" className={styles.primary}>
+              {buttons[0].label}
+            </button>
+            <button type="button" className={styles.secondary}>
+              {buttons[1].label}
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-)
+    </section>
+  )
+}
 
 export default TextImageBlock
