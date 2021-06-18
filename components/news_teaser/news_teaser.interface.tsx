@@ -28,20 +28,26 @@ export default interface NewsTeaserInterface {
   news_src: {
     title: string
     structure: {
-      tree: {
-        page: {
-          id: string
-          url: string
-          title: string
-          teaser: string
-          hero: {
-            id
-            url
-            focus_css
-            ratio
-          }
-        }
+      tree: blockInterface[]
       }
     }
+  }
+}
+
+
+export interface blockInterface {
+  page: pageBlock
+}
+
+export interface pageBlock {
+  id: string
+  url: string
+  title: string
+  teaser: string
+  hero: {
+    id
+    url
+    focus_css
+    ratio
   }
 }

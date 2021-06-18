@@ -1,10 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from './news_teaser.module.scss'
+import { pageBlock } from './news_teaser.interface'
 
 interface Props {
   imgSrc: string
-  cardBlock: any
+  cardBlock: pageBlock
 }
 
 const BlockConstructor = ({ imgSrc, cardBlock } : Props) => (
