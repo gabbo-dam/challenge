@@ -51,7 +51,6 @@ const NewsTeaserBlock = ({ block }: { block: NewsTeaserInterface }) => {
             )
           })} */}
           {bloquesitos()}
-
           <div className={styles.center}>
             <button type="button" className={styles.primary}>
               Load More
